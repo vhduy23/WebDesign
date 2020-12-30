@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đồ tập GYM</title>
+    <link rel="stylesheet" href="Style/bootstrap.min.css">
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="Style/w3.css">
+    <script src="script/jquery.min.js"></script>
+    <script src="Style/bootstrap.min.js"></script>
+    <script src="script/all.js"></script>
+    <script src="script/js.js"></script>
+    <script src="script/jssor.slider-28.0.0.min.js"></script>
+</head>
+<style type="text/css">
+    #bg-banner1-page3 {
+        background-image: url(Images/banner-bg1.jpg);
+        width: 330px;
+        height: 500px;
+        background-size: cover;
+        background-position: 50% 50%;
+        box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    }
+
+    #bg-banner2-page3 {
+        background-image: url(Images/banner-bg2.jpg);
+        width: 330px;
+        height: 500px;
+        background-size: cover;
+        background-position: 50% 50%;
+        box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    }
+
+    #bg-banner3-page3 {
+        background-image: url(Images/banner-bg3.jpg);
+        width: 330px;
+        height: 500px;
+        background-size: cover;
+        background-position: 50% 50%;
+        box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    }
+
+    #bg-banner4-page3 {
+        background-image: url(Images/banner-bg4.jpg);
+        width: 330px;
+        height: 500px;
+        background-size: cover;
+        background-position: 50% 50%;
+        box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    }
+
+    #bg-banner5-page3 {
+        background-image: url(Images/banner-bg5.jpg);
+        width: 330px;
+        height: 500px;
+        background-size: cover;
+        background-position: 50% 50%;
+        box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    }
+
+    #bg-banner6-page3 {
+        background-image: url(Images/banner-bg6.jpg);
+        width: 300px;
+        height: 500px;
+        background-size: cover;
+        background-position: 50% 50%;
+        box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    }
+</style>
+
+<body>
+    <div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top" style="color: gray;"><i
+                class="fas fa-angle-up"></i></button>
+    </div>
+    <div class="sticky-top" id="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light header-wrapper " id="top">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="Images/logo.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle style-a" href="#" id="navbarDropdown">
+                                ĐỒ BÓNG ĐÁ
+                            </a>
+                            <ul class="dropdown-content" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">ÁO BÓNG ĐÁ CLB</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">ÁO BÓNG ĐÁ THÁI LAN</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">ÁO ĐỘI TUYỂN</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link style-a" href="#">ĐỒ TẬP GYM</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link  style-a" href="#">ĐỒ TẬP YOGA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link style-a" href="#">THẢM TẬP YOGA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link style-a" href="#">ÁO BRA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link style-a" href="#">QUẦN LEGGING</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link style-a" href="#" id="navbarDropdown">
+                                <i class="fa fa-search"></i>
+                            </a>
+                            <ul class="dropdown-content" id="custom-search" aria-labelledby="navbarDropdown">
+                                <form class="d-flex">
+                                    <input class="form-control me-2" id="form-control-search" type="search"
+                                        placeholder="Search" aria-label="Search"><span class="border-icon-search"><i
+                                            class="fa fa-search " id="icon-search"></i></span>
+                                </form>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <span id="cart">0&#273; <i class="fas fa-briefcase"></i></span>
+            </div>
+        </nav>
+    </div>
+    <div>
+        <div id="bg-pp-page2">
+            <div class="container">
+                <div class="text-center">
+                    <h1>ĐỒ TẬP GYM NAM CAO CẤP GIÁ ƯU ĐÃI</h1>
+                </div>
+                <div style="padding-top: 0px;" id="nt-home" class="text-center">
+                    <a href="">HOME</a> /
+                    ÁO BÓNG ĐÁ
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4" id="bg-banner1-page3" style="max-width: 30%; margin: 15px ;">
+                    <div class="textbox-page4 text-center">
+                        <h6>QUẦN ÁO TẬP GYM NAM</h6>
+                        <p>Bộ sưu tập những mẫu quần áo tập GYM Nam đẹp và cực chất mà bạn không thể bỏ qua.</p>
+                        <a href="#" class="bt-banner-page4">QUẦN ÁO TẬP GYM</a>
+                    </div>
+                </div>
+                <div class="col-md-4" id="bg-banner2-page3" style="max-width: 30%;margin: 15px ;">
+                    <div class="textbox-page4 text-center">
+                        <h6>QUẦN JOGGER NAM THỂ THAO</h6>
+                        <p>Những mẫu quần jogger Nam thể thao đẹp & chất của các thương hiệu đồ thể thao uy tín.</p>
+                        <a href="#" class="bt-banner-page4">QUẦN JOGGER</a>
+                    </div>
+                </div>
+                <div class="col-md-4" id="bg-banner3-page3" style="max-width: 30%;margin: 15px ;">
+                    <div class="textbox-page4 text-center">
+                        <h6>QUẦN LEGGING NAM</h6>
+                        <p>Một chiếc quần mang lại cho các đấng mày râu một diện mạo mới lạ, sành điệu và chất lừ.</p>
+                        <a href="#" class="bt-banner-page4">QUẦN LEGGING NAM</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4" id="bg-banner4-page3" style="max-width: 30%; margin: 15px ;">
+                    <div class="textbox-page4 text-center">
+                        <h6>QUẦN SHORT NAM</h6>
+                        <p>Những mẫu quần short thể thao Nam đẹp và chất mà bạn không nên bỏ qua.</p>
+                        <a href="#" class="bt-banner-page4">QUẦN SHORT NAM</a>
+                    </div>
+                </div>
+                <div class="col-md-4" id="bg-banner5-page3" style="max-width: 30%;margin: 15px ;">
+                    <div class="textbox-page4 text-center">
+                        <h6>QUẦN LÓT NAM</h6>
+                        <p>Những chiếc quần lót thể thao cho Nam giới được sản xuất từ những chất liệu tốt, an toàn.</p>
+                        <a href="#" class="bt-banner-page4">QUẦN LÓT NAM</a>
+                    </div>
+                </div>
+                <div class="col-md-4" id="bg-banner6-page3" style="max-width: 30%;margin: 15px ;">
+                    <div class="textbox-page4 text-center">
+                        <h6>GĂNG TAY TẬP GYM</h6>
+                        <p>Ngoài găng tay thể thao dùng để tập GYM, tập tạ,…thì bạn có thể xem thêm những mẫu găng tay
+                            đi phượt, đi xe máy chất lượng cao.</p>
+                        <a href="#" class="bt-banner-page4">GĂNG TAY TẬP GYM</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center" id="star-box1" style="margin: 20px 0px 0px 100px;">
+                <div class="row">
+                    <span class="row" id="star-text">
+                        <b class="section-title"></b>
+                        <span style="font-size: 18px; font-weight: 700;">
+                            XEM TẤT CẢ CÁC SẢN PHẨM
+                        </span>
+                        <b class="section-title"></b>
+                    </span>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row" style="margin-top: 30px;">
+                    <div class="gym-shirt text-center col-md-3" style="border-left: none;">
+                        <a class="foo" href="#">
+                            <img src="Images/Ao-mercury-xanh-den-1-a.jpg" />
+                            <img src="Images/Ao-mercury-xanh-den-1-b.jpg" />
+                        </a>
+                        <span>
+                            <a style="color: orange;" href="#" target="_blank">Áo thun thể thao Mercury xanh đen</a>
+                            <br />
+                        </span>
+                        <del> 260,000₫ </del> <ins>190,000₫</ins>
+                        <span class="sale-gym">
+                            -25%
+                        </span>
+                        <span class="out-of-stock">
+                            OUT OF STOCK
+                        </span>
+                    </div>
+                    <div class="gym-shirt text-center col-md-3">
+                        <a href="#">
+                            <img src="Images/Ao-zeus-neon-2.jpg" />
+                        </a>
+                        <span>
+                            <a style="color: orange;" href="#" target="_blank">Áo thun thể thao Zeus neon</a>
+                            <br />
+                            <del> 320,000₫ </del> <ins>245,000₫</ins>
+                        </span>
+                        <span class="sale-gym">
+                            -23%
+                        </span>
+                        <span class="out-of-stock">
+                            OUT OF STOCK
+                        </span>
+                    </div>
+                    <div class="gym-shirt text-center col-md-3">
+                        <a href="#">
+                            <img src="Images/Ao-zeus-xanh-duong-3.jpg" />
+                        </a>
+                        <span>
+                            <a style="color: orange;" href="#" target="_blank">Áo thun thể thao Zeus xanh dương</a>
+                            <br />
+                            <del> 320,000₫ </del> <ins>245,000₫</ins>
+                        </span>
+                        <span class="sale-gym">
+                            -23%
+                        </span>
+                        <span class="out-of-stock">
+                            OUT OF STOCK
+                        </span>
+                    </div>
+                    <div class="gym-shirt text-center col-md-3">
+                        <a class="foo" href="#">
+                            <img src="Images/Ao-poseidon-xanh-duong-4-a.jpg" />
+                            <img src="Images/Ao-poseidon-xanh-duong-4-b.jpg" />
+                        </a>
+                        <span>
+                            <a style="color: orange;" href="#" target="_blank">Áo thun thể thao Poseidon xanh dương</a>
+                            <br />
+                            <del> 320,000₫ </del> <ins>245,000₫</ins>
+                        </span>
+                        <span class="sale-gym">
+                            -23%
+                        </span>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 30px;">
+                    <div class="gym-shirt text-center col-md-3" style="border-left: none;">
+                        <a class="foo" href="#">
+                            <img src="Images/Ao-poseidon-xanh-den-1a.jpg" />
+                            <img src="Images/Ao-poseidon-xanh-den-1b.jpg" />
+                        </a>
+                        <span>
+                            <a style="color: orange;" href="#" target="_blank">Áo thun thể thao Poseidon xanh đen</a>
+                            <br />
+                        </span>
+                        <del> 260,000₫ </del> <ins>190,000₫</ins>
+                        <span class="sale-gym">
+                            -25%
+                        </span>
+                    </div>
+                    <div class="gym-shirt text-center col-md-3">
+                        <a class="foo" href="#">
+                            <img src="Images/Ao-poseidon-xam-2a.jpg" />
+                            <img src="Images/Ao-poseidon-xam-2b.jpg" />
+                        </a>
+                        <span>
+                            <a style="color: orange;" href="#" target="_blank">Áo thun thể thao Poseidon xám</a>
+                            <br />
+                            <del> 320,000₫ </del> <ins>245,000₫</ins>
+                        </span>
+                        <span class="sale-gym">
+                            -23%
+                        </span>
+                    </div>
+                    <div class="gym-shirt text-center col-md-3">
+                        <a class="foo" href="#">
+                            <img src="Images/Ao-bacchus-xanh-duong-1a.jpg" />
+                            <img src="Images/Ao-bacchus-xanh-duong-3b.jpg" />
+                        </a>
+                        <span>
+                            <a style="color: orange;" href="#" target="_blank">Áo thun thể thao Bacchus xanh dương</a>
+                            <br />
+                            <del> 320,000₫ </del> <ins>245,000₫</ins>
+                        </span>
+                        <span class="sale-gym">
+                            -23%
+                        </span>
+                    </div>
+                    <div class="gym-shirt text-center col-md-3">
+                        <a class="foo" href="#">
+                            <img src="Images/Ao-bacchus-xanh-reu-4a.jpg" />
+                            <img src="Images/Ao-bacchus-xanh-reu-4b.jpg" />
+                        </a>
+                        <span>
+                            <a style="color: orange;" href="#" target="_blank">Áo thun thể thao Bacchus xanh rêu</a>
+                            <br />
+                            <del> 320,000₫ </del> <ins>245,000₫</ins>
+                        </span>
+                        <span class="sale-gym">
+                            -23%
+                        </span>
+                        <span class="out-of-stock">
+                            OUT OF STOCK
+                        </span>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 30px;">
+                    <div class="gym-shirt text-center col-md-3" style="border-left: none;">
+                        <a class="foo" href="#">
+                            <img src="Images/Ao-bacchus-den-1a.jpg" />
+                            <img src="Images/Ao-bacchus-den-1b.jpg" />
+                        </a>
+                        <span>
+                            <a style="color: orange;" href="#" target="_blank">Áo thun thể thao Bacchus đen</a> <br />
+                        </span>
+                        <del> 260,000₫ </del> <ins>190,000₫</ins>
+                        <span class="sale-gym">
+                            -25%
+                        </span>
+                    </div>
+                    <div class="gym-shirt text-center col-md-3">
+                        <a class="foo" href="#">
+                            <img src="Images/Ao-ceres-do-2a.jpg" />
+                            <img src="Images/Ao-ceres-do-2b.jpg" />
+                        </a>
+                        <span>
+                            <a style="color: orange;" href="#" target="_blank">Áo thun thể thao Ceres đỏ</a>
+                            <br />
+                            <del> 320,000₫ </del> <ins>245,000₫</ins>
+                        </span>
+                        <span class="sale-gym">
+                            -23%
+                        </span>
+                    </div>
+                    <div class="gym-shirt text-center col-md-3">
+                        <a href="#">
+                            <img src="Images/Ao-ceres-trang-3.jpg" />
+                        </a>
+                        <span>
+                            <a style="color: orange;" href="#" target="_blank">Áo thun thể thao Ceres trắng</a> <br />
+                            <del> 320,000₫ </del> <ins>245,000₫</ins>
+                        </span>
+                        <span class="sale-gym">
+                            -23%
+                        </span>
+                        <span class="out-of-stock">
+                            OUT OF STOCK
+                        </span>
+                    </div>
+                    <div class="gym-shirt text-center col-md-3">
+                        <a href="#">
+                            <img src="Images/Ao-vesta-xanh-bien-4.jpg" />
+                        </a>
+                        <span>
+                            <a style="color: orange;" href="#" target="_blank">Áo thun thể thao Vesta xanh biển</a>
+                            <br />
+                            <del> 320,000₫ </del> <ins>245,000₫</ins>
+                        </span>
+                        <span class="sale-gym">
+                            -23%
+                        </span>
+                        <span class="out-of-stock">
+                            OUT OF STOCK
+                        </span>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 30px;">
+                    <div class="gym-shirt text-center col-md-3" style="border-left: none;">
+                        <a class="foo" href="#">
+                            <img src="Images/quan-jogger-hummal-hyper-den-nam-1a.jpg" />
+                            <img src="Images/quan-jogger-hummal-hyper-den-nam-1b.jpg" />
+                        </a>
+                        <span>
+                            <a style="color: orange;" href="#" target="_blank">Hummal HYPER Black Joggers pants for
+                                MEN</a> <br />
+                        </span>
+                        <del> 490,000₫ </del> <ins>245,000₫</ins>
+                        <span class="sale-gym">
+                            -50%
+                        </span>
+                    </div>
+                    <div class="gym-shirt text-center col-md-3">
+                        <a class="foo" href="#">
+                            <img src="Images/quan-jogger-hummal-hyper-xam-nam-2a.jpg" />
+                            <img src="Images/quan-jogger-hummal-hyper-xam-nam-2b.jpg" />
+                        </a>
+                        <span>
+                            <a style="color: orange;" href="#" target="_blank">Hummal HYPER Gray Joggers pants for
+                                MEN</a>
+                            <br />
+                            <del> 490,000₫ </del> <ins>245,000₫</ins>
+                        </span>
+                        <span class="sale-gym">
+                            -50%
+                        </span>
+                    </div>
+                    <div class="gym-shirt text-center col-md-3">
+                        <a class="foo" href="#">
+                            <img src="Images/Palm-Grip-gang-tay-tap-gym-3a.jpg" />
+                            <img src="Images/Palm-Grip-gang-tay-tap-gym-3b.jpg" />
+                        </a>
+                        <span>
+                            <a style="color: orange;" href="#" target="_blank">Găng tay Palm Grip GYM</a> <br />
+                            <ins>75,000₫</ins>
+                        </span>
+                    </div>
+                    <div class="gym-shirt text-center col-md-3">
+                        <a class="foo" href="#">
+                            <img src="Images/crossfit-extra-gang-tay-tap-gym-4a.jpg" />
+                            <img src="Images/crossfit-extra-gang-tay-tap-gym-4b.jpg" />
+                        </a>
+                        <span>
+                            <a style="color: orange;" href="#" target="_blank">Crossfit Extra gloves GYM</a>
+                            <br />
+                            <ins>235,000₫</ins>
+                        </span>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 30px;">
+                    <div class="gym-shirt text-center col-md-3" style="border-left: none;">
+                        <a class="foo" href="#">
+                            <img src="Images/Tanktop-energy-neon-1a.jpg" />
+                            <img src="Images/energy-neon-1b.jpg" />
+                        </a>
+                        <span>
+                            <a style="color: orange;" href="#" target="_blank">Energy Tank xanh neon phản quang</a>
+                            <br />
+                        </span>
+                        <del> 230,000₫ </del> <ins>190,000₫</ins>
+                        <span class="sale-gym">
+                            -17%
+                        </span>
+                    </div>
+                    <div class="gym-shirt text-center col-md-3">
+                        <a class="foo" href="#">
+                            <img src="Images/Tanktop-energy-den-2a.jpg" />
+                            <img src="Images/Tanktop-energy-den-2b.jpg" />
+                        </a>
+                        <span>
+                            <a style="color: orange;" href="#" target="_blank">Energy Tank đen phản quang</a>
+                            <br />
+                            <del> 230,000₫ </del> <ins>190,000₫</ins>
+                        </span>
+                        <span class="sale-gym">
+                            -17%
+                        </span>
+                    </div>
+                    <div class="gym-shirt text-center col-md-3">
+                        <a class="foo" href="#">
+                            <img src="Images/Set-zipper-xam-tulle-3a.jpg" />
+                            <img src="Images/luoi-den-legging-3b.jpg" />
+                        </a>
+                        <span>
+                            <a style="color: orange;" href="#" target="_blank">SET 3D Zipper bra vs Tulle Mesh
+                                legging</a> <br />
+                            <del> 350,000₫ </del><ins>310,000₫</ins>
+                        </span>
+                        <span class="sale-gym">
+                            -11%
+                        </span>
+                    </div>
+                    <div class="gym-shirt text-center col-md-3">
+                        <a class="foo" href="#">
+                            <img src="Images/Ao-tanktop-Streacker-hong-4a.jpg" />
+                            <img src="Images/Ao-tanktop-Streacker-hong-4b.jpg" />
+                        </a>
+                        <span>
+                            <a style="color: orange;" href="#" target="_blank">360s Streacker Training Tank hồng</a>
+                            <br />
+                            <del>190,000₫</del><ins>150,000₫</ins>
+                        </span>
+                        <span class="sale-gym">
+                            -21%
+                        </span>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 30px;">
+                    <div class="gym-shirt text-center col-md-3" style="border-left: none;">
+                        <a class="foo" href="#">
+                            <img src="Images/gang-tay-tap-gym-nua-ngon-1a.jpg" />
+                            <img src="Images/gang-tay-tap-gym-nua-ban-1b.jpg" />
+                        </a>
+                        <span>
+                            <a style="color: orange;" href="#" target="_blank">Găng tay tập GYM Nữ nửa bàn Fitty
+                                Wear</a>
+                            <br />
+                        </span>
+                        <del> 200,000₫ </del> <ins>135,000₫</ins>
+                        <span class="sale-gym">
+                            -33%
+                        </span>
+                    </div>
+                    <div class="gym-shirt text-center col-md-3">
+                        <a class="foo" href="#">
+                            <img src="Images/Ao-thun-the-thao-bishop-den-2a.jpg" />
+                            <img src="Images/Ao-thun-the-thao-bishop-den-2b.jpg" />
+                        </a>
+                        <span>
+                            <a style="color: orange;" href="#" target="_blank">Áo thun thể thao Vesta đen</a>
+                            <br />
+                            <del> 320,000₫ </del> <ins>245,000₫</ins>
+                        </span>
+                        <span class="sale-gym">
+                            -23%
+                        </span>
+                    </div>
+                    <div class="gym-shirt text-center col-md-3">
+                        <a class="foo" href="#">
+                            <img src="Images/Ao-thun-the-thao-bishop-xanh-reu-3a.jpg" />
+                            <img src="Images/Ao-thun-the-thao-bishop-xanh-reu-3b.jpg" />
+                        </a>
+                        <span>
+                            <a style="color: orange;" href="#" target="_blank">Áo thun thể thao Vesta xanh rêu</a>
+                            <br />
+                            <del> 350,000₫ </del><ins>310,000₫</ins>
+                        </span>
+                        <span class="sale-gym">
+                            -11%
+                        </span>
+                        <span class="out-of-stock">
+                            OUT OF STOCK
+                        </span>
+                    </div>
+                    <div class="gym-shirt text-center col-md-3">
+                        <a href="#">
+                            <img src="Images/Ao-hades-trang-4.jpg" />
+                        </a>
+                        <span>
+                            <a style="color: orange;" href="#" target="_blank">Áo thun thể thao Hades trắng</a>
+                            <br />
+                            <del>320,000₫ </del><ins>245,000₫</ins>
+                        </span>
+                        <span class="sale-gym">
+                            -23%
+                        </span>
+                        <span class="out-of-stock">
+                            OUT OF STOCK
+                        </span>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 30px;">
+                    <div class="gym-shirt text-center col-md-3" style="border-left: none;">
+                        <a class="foo" href="#">
+                            <img src="Images/quan-shor-the-thao-37-xam-1a.jpg" />
+                            <img src="Images/quan-shor-the-thao-37-xam-1b.jpg" />
+                        </a>
+                        <span>
+                            <a style="color: orange;" href="#" target="_blank">Quần short training tập GYM Nam 360s E7
+                                xám</a>
+                            <br />
+                        </span>
+                        <del>265,000₫</del> <ins>240,000₫</ins>
+
+                        <span class="sale-gym">
+                            -9%
+                        </span>
+                    </div>
+                    <div class="gym-shirt text-center col-md-3">
+                        <a class="foo" href="#">
+                            <img src="Images/ao-ba-lo-tap-gym-den-2a.jpg" />
+                            <img src="Images/ao-ba-lo-den-2b.jpg" />
+                        </a>
+                        <span>
+                            <a style="color: orange;" href="#" target="_blank">Áo ba lỗ tập GYM Nam chữ Y form suông
+                                đen</a>
+                            <br />
+                            <del> 160,000₫ </del> <ins>120,000₫</ins>
+                        </span>
+                        <span class="sale-gym">
+                            -25%
+                        </span>
+                    </div>
+                    <div class="gym-shirt text-center col-md-3">
+                        <a class="foo" href="#">
+                            <img src="Images/ao-ba-lo-tap-gym-xam-3a.jpg" />
+                            <img src="Images/ao-ba-lo-xam-3b.jpg" />
+                        </a>
+                        <span>
+                            <a style="color: orange;" href="#" target="_blank">Áo ba lỗ tập GYM Nam chữ Y form suông
+                                xám</a>
+                            <br />
+                            <del> 160,000₫ </del> <ins>120,000₫</ins>
+                        </span>
+                        <span class="sale-gym">
+                            -25%
+                        </span>
+                    </div>
+                    <div class="gym-shirt text-center col-md-3">
+                        <a class="foo" href="#">
+                            <img src="Images/ao-ba-lo-tap-gym-trang-4a.jpg" />
+                            <img src="Images/ao-ba-lo-trang-4b.jpg" />
+                        </a>
+                        <span>
+                            <a style="color: orange;" href="#" target="_blank">Áo ba lỗ tập GYM Nam chữ Y form suông
+                                trắng</a>
+                            <br />
+                            <del> 160,000₫ </del> <ins>120,000₫</ins>
+                        </span>
+                        <span class="sale-gym">
+                            -25%
+                        </span>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 30px;">
+                    <div class="gym-shirt text-center col-md-3" style="border-left: none;">
+                        <a class="foo" href="#">
+                            <img src="Images/ao-tanktop-ba-lo-nu-tim-vien-1a.jpg" />
+                            <img src="Images/ao-tanktop-ba-lo-nu-tim-vien-1b.jpg" />
+                        </a>
+                        <span>
+                            <a style="color: orange;" href="#" target="_blank">Áo tanktop ba lỗ tập GYM Yoga màu tím dây
+                                chéo</a>
+                            <br />
+                        </span>
+                        <del> 250,000₫ </del> <ins>210,000₫</ins>
+                        <span class="sale-gym">
+                            -16%
+                        </span>
+                        <span class="out-of-stock">
+                            OUT OF STOCK
+                        </span>
+                    </div>
+                    <div class="gym-shirt text-center col-md-3">
+                        <a class="foo" href="#">
+                            <img src="Images/ao-tanktop-ba-lo-nu-hong-vien-2a.jpg" />
+                            <img src="Images/ao-tanktop-ba-lo-nu-hong-vien-2b.jpg" />
+                        </a>
+                        <span>
+                            <a style="color: orange;" href="#" target="_blank">Áo tanktop ba lỗ tập GYM Yoga màu hồng
+                                dây chéo</a>
+                            <br />
+                            <del> 250,000₫ </del> <ins>210,000₫</ins>
+                        </span>
+                        <span class="sale-gym">
+                            -16%
+                        </span>
+                        <span class="out-of-stock">
+                            OUT OF STOCK
+                        </span>
+                    </div>
+                    <div class="gym-shirt text-center col-md-3">
+                        <a class="foo" href="#">
+                            <img src="Images/quan-bo-chan-3a.jpg" />
+                            <img src="Images/quan-bo-chan-3b.jpg" />
+                        </a>
+                        <span>
+                            <a style="color: orange;" href="#" target="_blank">Quần tập gym yoga nữ dài bo cổ chân
+                            </a>
+                            <br />
+                            <del> 270,000₫ </del><ins>190,000₫</ins>
+                        </span>
+                        <span class="sale-gym">
+                            -30%
+                        </span>
+                        <span class="out-of-stock">
+                            OUT OF STOCK
+                        </span>
+                    </div>
+                    <div class="gym-shirt text-center col-md-3">
+                        <a class="foo" href="#">
+                            <img src="Images/quan-short-tap-gym-nam-den-4a.jpg" />
+                            <img src="Images/quan-short-tap-gym-nam-den-4b.jpg" />
+                        </a>
+                        <span>
+                            <a style="color: orange;" href="#" target="_blank">Quần short training tập GYM Nam 360s E7
+                                đen</a>
+                            <br />
+                            <del>265,000₫</del><ins>240,000₫</ins>
+                        </span>
+                        <span class="sale-gym">
+                            -9%
+                        </span>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 30px;">
+                    <div class="gym-shirt text-center col-md-3" style="border-left: none;">
+                        <a class="foo" href="#">
+                            <img src="Images/bong-tron-1a.jpg" />
+                            <img src="Images/Bong-yoga-tron-1b.jpg" />
+                        </a>
+                        <span>
+                            <a style="color: orange;" href="#" target="_blank">Bóng tập Yoga Aerobic trơn Brosman
+                                Gymball</a>
+                            <br />
+                            <del> 400,000₫ </del> <ins>300,000₫</ins>
+                        </span>
+                        <span class="sale-gym">
+                            -25%
+                        </span>
+                    </div>
+                    <div class="gym-shirt text-center col-md-3">
+                        <a class="foo" href="#">
+                            <img src="Images/bong-gai-2a.jpg" />
+                            <img src="Images/Bong-yoga-gai-2b.jpg" />
+                        </a>
+                        <span>
+                            <a style="color: orange;" href="#" target="_blank">Bóng tập Yoga Aerobic có gai Brosman
+                                Gymball</a>
+                            <br />
+                            <del> 400,000₫ </del> <ins>300,000₫</ins>
+                        </span>
+                        <span class="sale-gym">
+                            -25%
+                        </span>
+                    </div>
+                    <div class="gym-shirt text-center col-md-3">
+                        <a class="foo" href="#">
+                            <img src="Images/quan-bo-chan-3a.jpg" />
+                            <img src="Images/quan-bo-chan-3b.jpg" />
+                        </a>
+                        <span>
+                            <a style="color: orange;" href="#" target="_blank">Bộ quần áo tập gym yoga nữ ngắn
+                            </a>
+                            <br />
+                            <del> 300,000₫ </del><ins>250,000₫</ins>
+                        </span>
+                        <span class="sale-gym">
+                            -17%
+                        </span>
+                    </div>
+                    <div class="gym-shirt text-center col-md-3">
+                        <a class="foo" href="#">
+                            <img src="Images/crossfit-trang-4a.jpg" />
+                            <img src="Images/Ao-bras-crossfit-mau-trang-4b.jpg" />
+                        </a>
+                        <span>
+                            <a style="color: orange;" href="#" target="_blank">Bra 360s Crossfit màu trắng</a>
+                            <br />
+                            <del>250,000₫</del><ins>195,000₫</ins>
+                        </span>
+                        <span class="sale-gym">
+                            -22%
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="footer1">
+            <div class="container" style="margin-top: 15px;">
+                <div class="row" id="margin-footer">
+                    <div class="col-md-4">
+                        <span class="weight-title">VỀ SPORTER.VN</span>
+                        <div class="is-divider"></div>
+                        Hệ thống bán lẻ đồ thể thao Sporter là đơn vị chuyên sản xuất và phân phối các sản phẩm thể
+                        thao
+                        chuyên
+                        nghiệp. Tại đây bạn có thể dễ dàng mua Quần áo và dụng cụ thể thao chất lượng cao, chính
+                        hãng...
+                        <strong>Địa chỉ:</strong> 1471 Ba Tháng Hai, quận 11, TPHCM (gần cầu vượt Cây Gõ)<br />
+                        <strong>Hotline:</strong> <a href=""> <span style="font-size: 140%; color: #000080;">
+                                <strong>0936
+                                    777
+                                    554</strong></span></a>
+                        <div id="size-icon">
+                            <a href="https://www.facebook.com/DoTheThaoSporter.vn">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#">
+                                <i class="far fa-envelope"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-pinterest-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="weight-title">ĐĂNG KÝ NHẬN TIN KHUYẾN MÃI</span>
+                        <div class="is-divider"></div>
+                        Hãy nhập email của bạn để chúng tôi gửi email ngay khi có thông tin về những chương trình
+                        khuyến
+                        mãi
+                        mới.<br />
+                        <input id="input-email" type="email" placeholder="Nhập email của bạn"><br />
+                        <button class="btn btn-dark weight-title" style="margin-top: 10px;">Đăng kí</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer2">
+            <div class="container">
+                <div class="float-left">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CONTACT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">MŨ KÍNH BƠI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ÁO TẮM ĐỒ BƠI NỮ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">QUẦN BƠI NAM</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ĐỒ BƠI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">NÓN MŨ</a>
+                        </li>
+                    </ul>
+                    <div class="" id="copyright-footer">
+                        Copyright 2020 © <strong>SPORTER.VN</strong>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div id="payment-icon">
+                    <span><i class="fab fa-cc-visa"></i></span>
+                    <span><i class="fab fa-cc-paypal"></i></span>
+                    <span><i class="fab fa-cc-stripe"></i></span>
+                    <span><i class="fab fa-cc-mastercard"></i></span>
+                    <span><i class="fab fa-cc-amazon-pay"></i></span>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+        //Slide show
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+        function currentDiv(n) {
+            showDivs(slideIndex = n);
+        }
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" w3-white", "");
+            }
+            x[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " w3-white";
+        }
+    </script>
+</body>
+
+</html>

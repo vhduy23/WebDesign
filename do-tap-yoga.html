@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đồ tập Yoga</title>
+    <link rel="stylesheet" href="Style/bootstrap.min.css">
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="Style/w3.css">
+    <script src="script/jquery.min.js"></script>
+    <script src="Style/bootstrap.min.js"></script>
+    <script src="script/all.js"></script>
+    <script src="script/js.js"></script>
+    <script src="script/jssor.slider-28.0.0.min.js"></script>
+</head>
+<style>
+    #bg-banner1-page5 {
+        background-image: url(Images/bg-page5-1.jpg);
+        width: 100%;
+        height: 1017px;
+        background-size: cover;
+        background-position: 50% 0%;
+    }
+
+    #bg-banner2a-page5 {
+        background-image: url(Images/bg-banner2a-page5.jpg);
+        width: 100%;
+        height: 680px;
+        background-size: cover;
+        background-position: 50% 0%;
+        color: #f1f1f1;
+    }
+
+    #bg-banner2b-page5 {
+        background-image: url(Images/bg-banner2b-page5.jpg);
+        width: 100%;
+        height: 680px;
+        background-size: cover;
+        background-position: 50% 0%;
+    }
+
+    #bg-banner3-page5 {
+        background-image: url(Images/bg-banner3-page5.jpg);
+        width: 100%;
+        height: 377px;
+        background-size: cover;
+        background-position: 50% 0%;
+    }
+</style>
+
+<body>
+    <div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top" style="color: gray;"><i
+                class="fas fa-angle-up"></i></button>
+    </div>
+    <div class="sticky-top" id="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light header-wrapper " id="top">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="Images/logo.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle style-a" href="#" id="navbarDropdown">
+                                ĐỒ BÓNG ĐÁ
+                            </a>
+                            <ul class="dropdown-content" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">ÁO BÓNG ĐÁ CLB</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">ÁO BÓNG ĐÁ THÁI LAN</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">ÁO ĐỘI TUYỂN</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link style-a" href="#">ĐỒ TẬP GYM</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link  style-a" href="#">ĐỒ TẬP YOGA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link style-a" href="#">THẢM TẬP YOGA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link style-a" href="#">ÁO BRA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link style-a" href="#">QUẦN LEGGING</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link style-a" href="#" id="navbarDropdown">
+                                <i class="fa fa-search"></i>
+                            </a>
+                            <ul class="dropdown-content" id="custom-search" aria-labelledby="navbarDropdown">
+                                <form class="d-flex">
+                                    <input class="form-control me-2" id="form-control-search" type="search"
+                                        placeholder="Search" aria-label="Search"><span class="border-icon-search"><i
+                                            class="fa fa-search " id="icon-search"></i></span>
+                                </form>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <span id="cart">0&#273; <i class="fas fa-briefcase"></i></span>
+            </div>
+        </nav>
+    </div>
+    <div>
+        <div id="bg-pp-page2" style="background-color: black;">
+            <div class="container">
+                <div class="text-center">
+                    <h1>MUA QUẦN ÁO TẬP GYM VÀ ĐỒ TẬP YOGA NỮ ĐẸP CHÍNH HÃNG</h1>
+                </div>
+                <div style="padding-top: 0px;" id="nt-home" class="text-center">
+                    <a href="">HOME</a> /
+                    MUA QUẦN ÁO TẬP GYM & YOGA NỮ
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <div id="bg-banner1-page5">
+            <div class="" id="text-box-page5">
+                <h1>QUẦN ÁO TẬP GYM YOGA NỮ ĐẸP</h1>
+                <ul>
+                    <li><b>Sản phẩm:</b> Cao cấp chính hãng. </li>
+                    <li><b>Chất liệu vải:</b> Vải cotton hoặc polyester pha spandex co giãn.</li>
+                    <li><b>Size:</b> Độ rộng rất vừa vặn với cơ thể.</li>
+                    <li><b>Kiểu dáng:</b> Thời trang thể thao phù hợp với Fitness & Yoga</li>
+                    <li><b>Màu sắc:</b> Đa dạng màu sắc dễ dàng lựa chọn</li>
+                    <li><b>Sự thoải mái:</b> Luôn mang đến sự thoải mái khi tập luyện</li>
+                </ul>
+                <a href=""><i>Quần áo tập GYM Nam</i></a>
+            </div>
+        </div>
+        <div>
+            <div class=" w3-display-container" id="slide-show page3">
+                <span class="mySlides" id="bg-banner2a-page5">
+                    <div class="text-center " id="text-box-page2"
+                        style="left: 35%; bottom: 15%;background-color: rgb(209 209 209 / 60%);">
+                        <h3>ÁO NGỰC THỂ THAO BRAS</h3>
+                        <p>Chiếc áo ngực thể thao, áo bras là một phần không thể thiếu trong trang phục tập GYM – tập
+                            Yoga của nữ. Bạn hãy bổ sung vào bộ sưu tập của mình những mẫu thật chất lượng và đẹp mắt!
+                        </p>
+                        <span><a href="#" class="bt-banner2a-page5">XEM ÁO BRAS</a></span>
+                    </div>
+                </span>
+                <span class="clearfix"></span>
+                <span class="mySlides" id="bg-banner2b-page5">
+                    <div class="text-center " id="text-box-page2"
+                        style="left: 41%;bottom: 17%;padding: 26px; width: 432px; color: #555;">
+                        <h3>SET ĐỒ TẬP YOGA - GYM NỮ ĐẸP</h3>
+                        <p>Bạn có thể chọn cho mình những set đồ tập GYM, tập Yoga nữ rất đẹp mà không cần phải mất
+                            nhiều thời gian tìm hiểu cách phối đồ.</p>
+                        <span><a href="#" class="bt-banner2b-page5">XEM ÁO BRAS</a></span>
+                    </div>
+                </span>
+                <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle"
+                    style="width:100%">
+                    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+                    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+                </div>
+            </div>
+        </div>
+        <div id="bg-banner3-page5">
+            <div class="text-center " id="text-box-page2"
+                style="left: 27%;margin-top: 116px;padding: 26px; width: 432px; color: #555;">
+                <h3>QUẦN LEGGINGS THỂ THAO</h3>
+                <p>Chọn ngay những mẫu quần leggings thời trang thể thao xu hướng mới nhất.</p>
+                <span><a href="#" class="bt-banner2b-page5">XEM QUẦN</a></span>
+            </div>
+        </div>
+        <div class="text-center" id="star-box1" style="margin: 20px 0px 0px 155px;">
+            <div class="row">
+                <span class="row" id="star-text">
+
+                    <b class="section-title"></b>
+                    <span style="font-size: 18px; font-weight: 700; color: rgb(20, 0, 102);">
+                        <i class="fas fa-shopping-bag" style="font-size: 25px;"></i>
+                        NHỮNG MẪU QUẦN ÁO TẬP GYM - TẬP YOGA NỮ MỚI NHẤT
+                    </span>
+                    <b class="section-title"></b>
+                </span>
+            </div>
+        </div>
+        <div>
+            <div class="row" style="margin-top: 30px;">
+                <div class="yoga-shirt text-center col-md-4">
+                    <a class="foo" href="#">
+                        <img style="z-index: -1;" src="Images/Tanktop-legacy-den-1a.jpg" alt="">
+                        <img style="z-index: -1;" src="Images/Tanktop-legacy-den-1b.jpg" alt="">
+                    </a>
+                    <span>
+                        <a style="color: orange;" href="#" target="_blank">Áo Tanktop 360s Legacy màu đen</a> <br />
+                    </span>
+                    <del> 220,000₫ </del> <ins>170,000₫</ins>
+                    <span class="sale-yoga">
+                        -23%
+                    </span>
+                </div>
+                <div class="yoga-shirt text-center col-md-4">
+                    <a class="foo" href="#">
+                        <img style="z-index: -1;" src="Images/Ao-bras-shine-mau-xam-2a.jpg" alt="">
+                        <img style="z-index: -1;" src="Images/Ao-bras-shine-mau-xam-2b.jpg" alt="">
+                    </a>
+                    <span>
+                        <a style="color: orange;" href="#" target="_blank">Bra 360s Shine màu xám</a> <br />
+                        <del> 190,000₫ </del> <ins>145,000₫</ins>
+                    </span>
+                    <span class="sale-yoga">
+                        -24%
+                    </span>
+                </div>
+                <div class="yoga-shirt text-center col-md-4">
+                    <a class="foo" href="#">
+                        <img style="z-index: -1;" src="Images/Ao-bras-crossfit-mau-xanh-bien-3a.jpg" alt="">
+                        <img style="z-index: -1;" src="Images/Ao-bras-crossfit-mau-xanh-bien-3b.jpg" alt="">
+                    </a>
+                    <span>
+                        <a style="color: orange;" href="#" target="_blank">Bra 360s Crossfit màu xanh biển</a> <br />
+                        <del> 250,000₫ </del> <ins>195,000₫</ins>
+                    </span>
+                    <span class="sale-yoga">
+                        -22%
+                    </span>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 30px;">
+                <div class="yoga-shirt text-center col-md-4">
+                    <a class="foo" href="#">
+                        <img style="z-index: -1;" src="Images/Tanktop-energy-den-1a.jpg" alt="">
+                        <img style="z-index: -1;" src="Images/Tanktop-energy-den-1b.jpg" alt="">
+                    </a>
+                    <span>
+                        <a style="color: orange;" href="#" target="_blank">Energy Tank đen phản quang</a> <br />
+                    </span>
+                    <del> 230,000₫ </del> <ins>190,000₫</ins>
+                    <span class="sale-yoga">
+                        -17%
+                    </span>
+                </div>
+                <div class="yoga-shirt text-center col-md-4">
+                    <a class="foo" href="#">
+                        <img style="z-index: -1;" src="Images/Set-zipper-xam-tulle-2a.jpg" alt="">
+                        <img style="z-index: -1;" src="Images/luoi-den-legging-2b.jpg" alt="">
+                    </a>
+                    <span>
+                        <a style="color: orange;" href="#" target="_blank">SET 3D Zipper bra vs Tulle Mesh legging</a>
+                        <br />
+                        <del> 350,000₫ </del> <ins>310,000₫</ins>
+                    </span>
+                    <span class="sale-yoga">
+                        -11%
+                    </span>
+                </div>
+                <div class="yoga-shirt text-center col-md-4">
+                    <a class="foo" href="#">
+                        <img style="z-index: -1;" src="Images/Ao-tanktop-Streacker-hong-3a.jpg" alt="">
+                        <img style="z-index: -1;" src="Images/Ao-tanktop-Streacker-hong-3b.jpg" alt="">
+                    </a>
+                    <span>
+                        <a style="color: orange;" href="#" target="_blank">360s Streacker Training Tank hồng</a> <br />
+                        <del> 250,000₫ </del> <ins>195,000₫</ins>
+                    </span>
+                    <span class="sale-yoga">
+                        -22%
+                    </span>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 30px;">
+                <div class="yoga-shirt text-center col-md-4">
+                    <a class="foo" href="#">
+                        <img style="z-index: -1;" src="Images/streacker-den-1a.jpg" alt="">
+                        <img style="z-index: -1;" src="Images/streacker-den-1b.jpg" alt="">
+                    </a>
+                    <span>
+                        <a style="color: orange;" href="#" target="_blank">360s Streacker Training Tank đen</a> <br />
+                    </span>
+                    <del> 180,000₫ </del> <ins>150,000₫</ins>
+                    <span class="sale-yoga">
+                        -17%
+                    </span>
+                </div>
+                <div class="yoga-shirt text-center col-md-4">
+                    <a class="foo" href="#">
+                        <img style="z-index: -1;" src="Images/flex-training-trang-2a.jpg" alt="">
+                        <img style="z-index: -1;" src="Images/flex-training-trang-2b.jpg" alt="">
+                    </a>
+                    <span>
+                        <a style="color: orange;" href="#" target="_blank">360s Flex Training Tank trắng</a> <br />
+                        <del> 180,000₫ </del> <ins>150,000₫</ins>
+                    </span>
+                    <span class="sale-yoga">
+                        -17%
+                    </span>
+                </div>
+                <div class="yoga-shirt text-center col-md-4">
+                    <a class="foo" href="#">
+                        <img style="z-index: -1;" src="Images/flex-training-hong-3a.jpg" alt="">
+                        <img style="z-index: -1;" src="Images/flex-training-hong-3b.jpg" alt="">
+                    </a>
+                    <span>
+                        <a style="color: orange;" href="#" target="_blank">360s Flex Training Tank hồng phấn</a> <br />
+                        <del> 180,000₫ </del> <ins>150,000₫</ins>>
+                    </span>
+                    <span class="sale-yoga">
+                        -17%
+                    </span>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 30px;">
+                <div class="yoga-shirt text-center col-md-4">
+                    <a class="foo" href="#">
+                        <img style="z-index: -1;" src="Images/flex-training-den-1a.jpg" alt="">
+                        <img style="z-index: -1;" src="Images/flex-training-den-1b.jpg" alt="">
+                    </a>
+                    <span>
+                        <a style="color: orange;" href="#" target="_blank">360s Flex Training Tank đen</a> <br />
+                    </span>
+                    <del> 180,000₫ </del> <ins>150,000₫</ins>
+                    <span class="sale-yoga">
+                        -17%
+                    </span>
+                </div>
+                <div class="yoga-shirt text-center col-md-4">
+                    <a class="foo" href="#">
+                        <img style="z-index: -1;" src="Images/streacker-tim-2a.jpg" alt="">
+                        <img style="z-index: -1;" src="Images/streacker-tim-2a.jpg" alt="">
+                    </a>
+                    <span>
+                        <a style="color: orange;" href="#" target="_blank">360s Streacker Training Tank tím</a> <br />
+                        <del> 180,000₫ </del> <ins>150,000₫</ins>
+                    </span>
+                    <span class="sale-yoga">
+                        -17%
+                    </span>
+                </div>
+                <div class="yoga-shirt text-center col-md-4">
+                    <a class="foo" href="#">
+                        <img style="z-index: -1;" src="Images/Bra-elastic-mau-trang-3a.jpg" alt="">
+                        <img style="z-index: -1;" src="Images/Bra-elastic-mau-trang-3b.jpg" alt="">
+                    </a>
+                    <span>
+                        <a style="color: orange;" href="#" target="_blank">Bra 360s Elastic màu trắng</a> <br />
+                        <del> 170,000₫ </del> <ins>145,000₫</ins>>
+                    </span>
+                    <span class="sale-yoga">
+                        -22%
+                    </span>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 30px;">
+                <div class="yoga-shirt text-center col-md-4">
+                    <a class="foo" href="#">
+                        <img style="z-index: -1;" src="Images/Quan-short-det-xanh-duong-1a.jpg" alt="">
+                        <img style="z-index: -1;" src="Images/Model-quan-short-det-1b.jpg" alt="">
+                    </a>
+                    <span>
+                        <a style="color: orange;" href="#" target="_blank">Quần Short tập GYM, Yoga nữ 360s dệt màu xám
+                            viền xanh</a> <br />
+                    </span>
+                    <del> 200,000₫ </del> <ins>110,000₫</ins>
+                    <span class="sale-yoga">
+                        -45%
+                    </span>
+                </div>
+                <div class="yoga-shirt text-center col-md-4">
+                    <a class="foo" href="#">
+                        <img style="z-index: -1;" src="Images/Quan-short-det-den-2a.jpg" alt="">
+                        <img style="z-index: -1;" src="Images/Size-quan-short-det-2b.jpg" alt="">
+                    </a>
+                    <span>
+                        <a style="color: orange;" href="#" target="_blank">Quần Short tập GYM, Yoga nữ 360s dệt màu xám
+                            viền đen</a> <br />
+                        <del> 200,000₫ </del> <ins>110,000₫</ins>
+                    </span>
+                    <span class="sale-yoga">
+                        -17%
+                    </span>
+                </div>
+                <div class="yoga-shirt text-center col-md-4">
+                    <a class="foo" href="#">
+                        <img style="z-index: -1;" src="Images/Quan-shorts-glute-tim-3a.jpg" alt="">
+                        <img style="z-index: -1;" src="Images/Quan-shorts-glute-6-3b.jpg" alt="">
+                    </a>
+                    <span>
+                        <a style="color: orange;" href="#" target="_blank">Quần Shorts tập GYM nữ 360s Glute màu tím</a>
+                        <br />
+                        <del> 180,000₫ </del> <ins>110,000₫</ins>
+                    </span>
+                    <span class="sale-yoga">
+                        -39%
+                    </span>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 30px;">
+                <div class="yoga-shirt text-center col-md-4">
+                    <a class="foo" href="#">
+                        <img style="z-index: -1;" src="Images/Quan-shorts-glute-den-1a.jpg" alt="">
+                        <img style="z-index: -1;" src="Images/Quan-shorts-glute-1b.jpg" alt="">
+                    </a>
+                    <span>
+                        <a style="color: orange;" href="#" target="_blank">Quần Shorts tập GYM nữ 360s Glute màu xám</a>
+                        <br />
+                    </span>
+                    <del> 180,000₫ </del> <ins>110,000₫</ins>
+                    <span class="sale-yoga">
+                        -39%
+                    </span>
+                </div>
+                <div class="yoga-shirt text-center col-md-4">
+                    <a class="foo" href="#">
+                        <img style="z-index: -1;" src="Images/Rainbow-den-2a.jpg" alt="">
+                        <img style="z-index: -1;" src="Images/Rainbow-den-2b.jpg" alt="">
+                    </a>
+                    <span>
+                        <a style="color: orange;" href="#" target="_blank">Legging 360s Rainbow đen</a> <br />
+                        <del> 250,000₫ </del> <ins>170,000₫</ins>
+                    </span>
+                    <span class="sale-yoga">
+                        -32%
+                    </span>
+                </div>
+                <div class="yoga-shirt text-center col-md-4">
+                    <a class="foo" href="#">
+                        <img style="z-index: -1;" src="Images/Leisure-trang-4A.jpg" alt="">
+                        <img style="z-index: -1;" src="Images/Leisure-trang-4B.jpg" alt="">
+                    </a>
+                    <span>
+                        <a style="color: orange;" href="#" target="_blank">Legging 360s Leisure trắng phối xám</a>
+                        <br />
+                        <del> 220,000₫ </del> <ins>170,000₫</ins>
+                    </span>
+                    <span class="sale-yoga">
+                        -23%
+                    </span>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 30px;">
+                <div class="yoga-shirt text-center col-md-4">
+                    <a class="foo" href="#">
+                        <img style="z-index: -1;" src="Images/sturdy-trang-1a.jpg" alt="">
+                        <img style="z-index: -1;" src="Images/sturdy-trang-1b.jpg" alt="">
+                    </a>
+                    <span>
+                        <a style="color: orange;" href="#" target="_blank">Legging 360s Sturdy trắng phối lưới</a>
+                        <br />
+                    </span>
+                    <del> 280,000₫ </del> <ins>190,000₫</ins>
+                    <span class="sale-yoga">
+                        -32%
+                    </span>
+                </div>
+                <div class="yoga-shirt text-center col-md-4">
+                    <a class="foo" href="#">
+                        <img style="z-index: -1;" src="Images/elastic-lavender-2a.jpg" alt="">
+                        <img style="z-index: -1;" src="Images/elastic-lavender-2b.jpg" alt="">
+                    </a>
+                    <span>
+                        <a style="color: orange;" href="#" target="_blank">Legging 360s Elastic</a> <br />
+                        <del> 210,000₫ </del> <ins>150,000₫</ins>
+                    </span>
+                    <span class="sale-yoga">
+                        -23%
+                    </span>
+                    <span class="out-of-stock">
+                        OUT OF STOCK
+                    </span>
+                </div>
+                <div class="yoga-shirt text-center col-md-4">
+                    <a href="#">
+                        <img style="z-index: -1;" src="Images/legging-compression-mau-xam-4.jpg" alt="">
+                    </a>
+                    <span>
+                        <a style="color: orange;" href="#" target="_blank">Legging lửng 360s Compression lửng xám</a>
+                        <br />
+                        <del> 210,000₫ </del> <ins>160,000₫</ins>
+                    </span>
+                    <span class="sale-yoga">
+                        -26%
+                    </span>
+                </div>
+            </div>
+            <div class="container">
+                <div>
+                    <img id="banner-p5" src="Images/banner-page5.jpg" alt="">
+                </div>
+                <div id="text-page5">
+                    <span>
+                        <p>Tập thể dục thể thao là 1 yếu tố rất quan trọng tới sức khỏe của bạn, nhu cầu hiện nay về
+                            quần áo
+                            tập
+                            GYM,<a style="color: orange;" href=""><b> tập Yoga</b></a> và thể dục thẩm mỹ Aerobic cũng
+                            vì thế mà rất được quan tâm. Tuy nhiên, việc lựa
+                            chọn
+                            những mẫu trang phục để tập cũng không phải dễ dàng vì mẫu mã và chất lượng sản phẩm đôi lúc
+                            không
+                            được như bạn mong muốn.
+                        </p>
+                        <p>Hệ thống bán lẻ đồ thể thao Sporter.vn xin được giới thiệu với các chị em bộ sưu tập đồ tập
+                            gym
+                            nữ,
+                            Aerobic, thể dục thẩm mỹ, Yoga. Sản phẩm chất lượng cao, mẫu mã đẹp và quan trọng là giá
+                            luôn
+                            mềm
+                            nhất so với những sản phẩm cùng chất lượng.
+                        </p>
+                        <p>Sản xuất tại Việt Nam hoặc nhập khẩu chính hãng</p>
+                        <p><b>Chất liệu:</b> Pixigen, Polyester, Cotton, Spandex, lưới.. co giãn 4 chiều, thấm hút cực
+                            tốt, tạo
+                            cảm
+                            giác cực thoải mái cho người mặc khi tham gia các hoạt động thể dục thể thao, đặc biệt phù
+                            hợp
+                            với
+                            các môn như Yoga, tập GYM, tập thể dục thẩm mỹ Aerobic.
+                        </p>
+                        <p>Kiểu dáng đa dạng, nhiều màu sắc, phù hợp với mọi lứa tuổi. Có thể sử dụng để tập thể dục
+                            thẩm
+                            mỹ,
+                            aerobic, yoga hay đi bơi đều được.
+                        </p>
+                    </span>
+                    <span>
+                        <img style="width: 710px; height: 250px;" src="Images/yoga-1.jpg" alt="">
+                    </span>
+                    <p style="margin-top: 35px;"><b>Những tiêu chí chính khi chọn quần áo Yoga, GYM và thể dục thẩm mỹ
+                            Aerobic</b></p>
+                    <span>
+                        <h5>SỰ THOẢI MÁI VÀ DỄ CHỊU</h5>
+                        <p>Bộ đồ dùng để tập Yoga, GYM của bạn sẽ xác định bạn có thể dễ dàng thực hiện các động tác từ
+                            dễ
+                            đến khó, trang phục Yoga của bạn có thể giúp bạn thoải mái di chuyển và làm cho bạn cảm thấy
+                            tự
+                            tin trong luc bạn đang luyện tập. Nếu đồ của bạn quá cứng nhắc, nó sẽ khiến bạn không di
+                            chuyển
+                            tự do được.
+                        </p>
+                    </span>
+                    <br/>
+                    <span>
+                        <h5>HẤP DẪN KHI MẶC</h5>
+                        <p>Dù điều này có nhiều bạn sẽ phân vân nhưng chắc chắn khi mặc bộ đồ Yoga và GYM thì cơ thể bạn
+                            sẽ
+                            được tôn dáng lên nhất, vì vậy bạn phải chọn những bộ quần áo tập đẹp nhất và khi mặc bạn
+                            cảm
+                            thấy tự tin nhất, bạn cho người ta thấy cái sự “hấp dẫn” mà bạn đang có.
+                        </p>
+                    </span>
+                    <br/>
+                    <span>
+                        <h5>ĐỘ VỪA VẶN CỦA TRANG PHỤC</h5>
+                        <p>Tùy sở thích của mỗi người, có người thích mặc hơi rộng nhưng cũng có nhiều bạn thích mặc bó
+                            sát.
+                            Tuy nhiên khi tập luyện bạn không nên mặc đồ quá rộng vì nó sẽ đôi khi không nghe lời bạn
+                            trong
+                            những động tác khó như lộn ngược người,…Ngược lại, đồ tập quá sát sẽ làm bạn khó khăn trong
+                            khi
+                            thực hiện các động tác và nếu mặc lâu sẽ ảnh hưởng đến sức khỏe của bạn rất nhiều.
+                        </p>
+                    </span>
+                    <br/>
+                    <span>
+                        <h5>ĐỘ BỀN, CHẤT LƯỢNG</h5>
+                        <p>Sản phẩm chất lượng sẽ mang đến độ bền cao, bạn nên chọn các trang phục được sản xuất bởi các
+                            sợi
+                            hữu cơ. Các loại quần – áo tập thì có thể là Polyester pha Cotton và Spandex sẽ là hợp lý.
+                        </p>
+                    </span>
+                    <br/>
+                    <span>
+                        <h5>KHẢ NĂNG THẤM HÚT MỒ HÔI</h5>
+                        <p>Không chỉ đối với các môn Yoga, GYM hay thể dục thẩm mỹ mà trong thể thao nói chung, trang
+                            phục
+                            cần phải thâm hút mồ hôi tốt.
+                        </p>
+                        <p>Vì vậy, khi lựa chọn trang phục tập luyện thì bạn nên lựa chọn những mẫu nào có thể vừa thấm
+                            hút
+                            tốt mà ít dính vào da để dẽ chịu khi tập.
+                        </p>
+                    </span>
+                    <br/>
+                    <span>
+                        <h5>MÀU SẮC VÀ KIỂU DÁNG</h5>
+                        <p>Về màu sắc của đồ Yoga hay GYM thì bạn không nên chọn màu quá chói, những màu sắc quá tươi,
+                            bóng
+                            loáng có thể làm bạn hoặc những người xung quang phân tâm, từ đó dẫn đến những kết quả không
+                            tốt
+                            cho quá trình tập, nhất là những tư thế cần sự tập trung cao độ như Đứng bằng đầu… Đặc biệt
+                            nó
+                            còn ảnh hưởng trực tiếp đến quá trình thiền của bạn.
+                        </p>
+                        <p>Quần thì bạn nên chọn màu tối, áo thì bạn có thể chọn màu sắc nào êm dịu.</p>
+                    </span>
+                    <br/>
+                    <span>
+                        <h5>AN TOÀN</h5>
+                        <p>Hiện nay trên thị trường có nhiều quần áo và phụ kiện môn Yoga có nguồn gốc xuất xứ không rõ
+                            ràng. Đặc biệt là những bộ trang phục hàng Trung Quốc.
+                        </p>
+                        <p>Vì sự an toàn của bản thân thì bạn hãy mua hàng chính hãng của các hãng nổi tiếng, nếu không
+                            thì
+                            hàng Việt Nam sẽ an toàn hơn.
+                        </p>
+                    </span>
+                    <br/>
+                    <span>
+                        <h2>QUẦN TẬP YOGA, QUẦN TẬP GYM VÀ THỂ DỤC THẨM MỸ</h2>
+                        <p>Những tiêu chí hàng đầu của một chiếc quần của Yoga là nó được làm bằng vải thun dễ cử động,
+                            thấm
+                            mồ hôi tốt, được thiết kế bó sát giúp người mặc thoải mái thực hiện nhiều động tác duỗi cơ,
+                            uốn
+                            người mà không gặp bất cứ khó khăn nào.
+                        </p>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="Images/yoga-2.jpg" alt="">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="Images/yoga-3.jpg" alt="">
+                            </div>
+                        </div>
+                        <p>Khi tập luyện Yoga thì bạn nên lựa chọn quần short sẽ là hợp lý nhất, đối với thời tiết lạnh
+                            mùa
+                            đông thì bạn có thể mặc quần dài để ấm hơn. Quần để tập cần đảm bảo về độ bền, bởi vì bạn sẽ
+                            thực hiện rất nhiều các động tác gập, căng, duỗi, lộn người…
+                        </p>
+                        <p>Một tiêu chí quan trọng nữa khi lựa quần tập là cũng cần phải kín đáo, an toàn giúp bạn tự
+                            tin
+                            hơn, không gặp bất cứ rắc rối nào trong lúc tập.
+                        </p>
+                        <p>Phần đáy quần bạn nên lựa loại có vải đẻm thêm để đảm bảo độ chắc chắn của quần. Loại vải
+                            cũng
+                            cần được lưu ý vì nó không được quá trơn để bạn còn có thể dễ dàng giữ thăng bằng khi đứng 1
+                            chân hoặc đầu gối.
+                        </p>
+                        <p>Đối với quần Yoga thì bạn nên chọn loại vải thoáng khí, mềm mại và có độ co giãn tốt nhưng
+                            vẫn
+                            giữ form trong khi vận động.
+                        </p>
+                    </span>
+                    <br/>
+                    <span>
+                        <h5>ƯU ĐIỂM CỦA QUẦN TẬP</h5>
+                        <p>Ngoài tác dụng chính là một chiếc quần để dùng cho môn Yoga, nhưng trên thực tế thì chiếc
+                            quần
+                            này phù hợp với hầu như tất cả mọi hoạt động thể dục thể thao khác, như GYM, chạy bộ…
+                        </p>
+                        <p>Và ngoài tập thể thao thì chiếc quần này cũng đang trở thành xu hướng thời trang rất được yêu
+                            thích của phụ nữ trên toàn thế giới và là món đồ không thể thiếu khi dạo phố, mua sắm, hay
+                            đơn
+                            giản chỉ là dùng để mặc ở nhà.
+                        </p>
+                        <p>Tuy vậy bạn cũng không nên mặc nó quá thường xuyên trong thời gian dài.</p>
+                    </span>
+                    <br/>
+                    <span>
+                        <h5>NHƯỢC ĐIỂM CỦA QUẦN YOGA</h5>
+                        <p>Quần Yoga thường được sản xuất bằng chất liệu thun co giãn dễ thấm mồ hôi và những chiếc quần
+                            này
+                            được thiết kế bó sát. Và khi chúng ta vận động nhiều, mồ hôi sẽ được tiết ra sẽ tạo thành
+                            một
+                            môi trường hoàn hảo để vi khuẩn phát triển. Và thậm chí không chỉ viêm nang lông, chúng ta
+                            còn
+                            có thể dễ dàng bị nhiễm khuẩn nấm men.
+                        </p>
+                        <p>Ngoài ra, cũng đã có những nghiên cứu chỉ ra rằng việc mặc quần quá bó cũng gây áp lực lên dạ
+                            dày, gây khó tiêu, ợ hơi rất khó chịu.
+                        </p>
+                        <p>Khi mặc quần tập bó sát quá lâu trong một thời gian dài thì có thể gây ra triệu chứng của
+                            bệnh
+                            viên nang lông – đây là một nhóm bệnh gây ra bởi vi khuẩn trú tại các nang lông dưới da.
+                        </p>
+                        <p>Vi khuẩn này khiến các nang lông bị nhiễm trùng, gây kích ứng, ngứa ngáy khó chịu, chúng tạo
+                            nên
+                            các nốt nhỏ màu đỏ rất mẫn cảm trên da của bạn.
+                        </p>
+                        <p>Bạn không nên mặc quần bó sát quá thường xuyên trong thời gian lâu dài vì khi bị viêm nang
+                            lông,
+                            nếu không được chữa trị kịp thời, các nốt này có thể lây lan rất nhanh kèm theo đó là gây ra
+                            biến chứng, trở nên bất trị và không thể loại bỏ. Mặc dù chúng không nguy hiểm đến tính
+                            mạng,
+                            nhưng về mặt thẩm mỹ thì thực sự là ảnh hưởng rất nhiều.
+                        </p>
+                        <p>Giải pháp cũng đơn giản, khi mặc những chiếc quần như vậy, bạn không nên mặc chúng trong một
+                            thời
+                            gian quá lâu mà nên thay ra ngay sau khi vận động. Ngoài ra, bạn cũng cần giặt quần áo
+                            thường
+                            xuyên để tránh để vi khuẩn có điều kiện phát triển.
+                        </p>
+                    </span>
+                    <br/>
+                    <span>
+                        <h5>MỘT SỐ LƯU Ý KHI TẬP YOGA:</h5>
+                        <p>Những điều đơn giản mà bạn cần lưu ý khi tập luyện môn Yoga và GYM hay thể dục thẩm mỹ
+                            Aerobic để
+                            đảm bảo hiệu quả tốt nhất:
+                        </p>
+                        <ul>
+                            <li>Bạn nên để tóc thật gọn gàng, nhất là các chị em phụ nữ nên buộc tóc cao hoặc thắt thành
+                                búi
+                                để không bị vướng víu khi tập những động tác Yoga.</li>
+                            <li>Không nên mang đồ trang sức trong quá trình tập như: dây chuyền, bông tai loại lớn, đồng
+                                hồ,…</li>
+                        </ul>
+                    </span>
+                    <br/>
+                    <span>
+                        <h2>ÁO YOGA – GYM NỮ</h2>
+                        <p>Dù là áo hay quần thì cũng cần dựa trên hai tiêu chí: đơn giản và thuận tiện. Đừng có chọn
+                            những
+                            mẫu mã trang trí rườm rà, cầu kỳ, nhiều hạt đính và dây nơ vì nó sẽ gây khó khăn cho bạn
+                            trong
+                            lúc tập, đặc biệt trong những động tác khó.
+                        </p>
+                        <p>Một chiếc áo hoàn hảo nên ôm sát vừa phải, không quá bó sát và cũng không rộng quá, bạn nên
+                            chọn
+                            loại tay ngắn hoặc không tay. Hãy chọn những thiết kế vừa vặn, đem lại cho bạn sự thoải mái
+                            và
+                            tự tin ở phòng tập.
+                        </p>
+                        <p>Bạn nên chọn vật liệu co giãn tốt, thoát khí tốt và có độ mềm mại dễ chịu trong quá trình vận
+                            động ra mồ hôi nhiều.
+                        </p>
+                        <p>Đối với nữ, bạn nên chọn cho mình một chiếc áo ngực thể thao vô cùng quan trọng trong bất kỳ
+                            việc
+                            tập luyện nào, giúp bảo vệ vòng một và hỗ trợ người tập trong các động tác uốn dẻo, gập
+                            người.
+                        </p>
+                    </span>
+                    <br/>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div id="footer1">
+                <div class="container" style="margin-top: 15px;">
+                    <div class="row" id="margin-footer">
+                        <div class="col-md-4">
+                            <span class="weight-title">VỀ SPORTER.VN</span>
+                            <div class="is-divider"></div>
+                            Hệ thống bán lẻ đồ thể thao Sporter là đơn vị chuyên sản xuất và phân phối các sản phẩm thể
+                            thao
+                            chuyên
+                            nghiệp. Tại đây bạn có thể dễ dàng mua Quần áo và dụng cụ thể thao chất lượng cao, chính
+                            hãng...
+                            <strong>Địa chỉ:</strong> 1471 Ba Tháng Hai, quận 11, TPHCM (gần cầu vượt Cây Gõ)<br />
+                            <strong>Hotline:</strong> <a href=""> <span style="font-size: 140%; color: #000080;">
+                                    <strong>0936
+                                        777
+                                        554</strong></span></a>
+                            <div id="size-icon">
+                                <a href="https://www.facebook.com/DoTheThaoSporter.vn">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="far fa-envelope"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-pinterest-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <span class="weight-title">ĐĂNG KÝ NHẬN TIN KHUYẾN MÃI</span>
+                            <div class="is-divider"></div>
+                            Hãy nhập email của bạn để chúng tôi gửi email ngay khi có thông tin về những chương trình
+                            khuyến
+                            mãi
+                            mới.<br />
+                            <input id="input-email" type="email" placeholder="Nhập email của bạn"><br />
+                            <button class="btn btn-dark weight-title" style="margin-top: 10px;">Đăng kí</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="footer2">
+                <div class="container">
+                    <div class="float-left">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">ABOUT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">CONTACT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">FAQ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#">MŨ KÍNH BƠI</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">ÁO TẮM ĐỒ BƠI NỮ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">QUẦN BƠI NAM</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">ĐỒ BƠI</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#">NÓN MŨ</a>
+                            </li>
+                        </ul>
+                        <div class="" id="copyright-footer">
+                            Copyright 2020 © <strong>SPORTER.VN</strong>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div id="payment-icon">
+                        <span><i class="fab fa-cc-visa"></i></span>
+                        <span><i class="fab fa-cc-paypal"></i></span>
+                        <span><i class="fab fa-cc-stripe"></i></span>
+                        <span><i class="fab fa-cc-mastercard"></i></span>
+                        <span><i class="fab fa-cc-amazon-pay"></i></span>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            //Get the button
+            var mybutton = document.getElementById("myBtn");
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function () { scrollFunction() };
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+            //Slide show
+            var slideIndex = 1;
+            showDivs(slideIndex);
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+            function currentDiv(n) {
+                showDivs(slideIndex = n);
+            }
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("demo");
+                if (n > x.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = x.length }
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" w3-white", "");
+                }
+                x[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " w3-white";
+            }
+        </script>
+</body>
+
+</html>

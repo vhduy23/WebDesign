@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sporter.vn</title>
+    <link rel="stylesheet" href="Style/bootstrap.min.css">
+    <link rel="stylesheet" href="Style/style.css">
+    <script src="script/jquery.min.js"></script>
+    <script src="Style/bootstrap.min.js"></script>
+    <script src="script/all.js"></script>
+    <script src="script/js.js"></script>
+    <style>
+        #img-index1 {
+            background-image: url(Images/yoga-bras-banner.jpg);
+        }
+
+        #img-index2 {
+            background-image: url(Images/Banner-tham-yioga.png);
+        }
+
+        #bg-tennis {
+            background-image: url(Images/banner-tennis-2.jpg)
+        }
+
+        #bg-football {
+            background-image: url(Images/Ao-bayern-san-khach-mau-ba-0.jpg);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top" style="color: gray;"><i class="fas fa-angle-up"></i></button>
+    </div>
+    <div class="sticky-top" id="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light header-wrapper " id="top">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="Images/logo.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle style-a" href="#" id="navbarDropdown">
+                                ĐỒ BÓNG ĐÁ
+                            </a>
+                            <ul class="dropdown-content" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">ÁO BÓNG ĐÁ CLB</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">ÁO BÓNG ĐÁ THÁI LAN</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">ÁO ĐỘI TUYỂN</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link style-a" href="#">ĐỒ TẬP GYM</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle style-a" href="#" id="navbarDropdown">
+                                ĐỒ TẬP YOGA
+                            </a>
+                            <ul class="dropdown-content" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">QUẦN ÁO TẬP GYM YOGA NỮ</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">QUẦN LÓT NỮ</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">PHỤ KIỆN YOGA</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link style-a" href="#">THẢM TẬP YOGA</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link style-a" href="#">ÁO BRA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link style-a" href="#">QUẦN LEGGING</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link style-a" href="#" id="navbarDropdown">
+                                <i class="fa fa-search"></i>
+                            </a>
+                            <ul class="dropdown-content" id="custom-search" aria-labelledby="navbarDropdown">
+                                <form class="d-flex">
+                                    <input class="form-control me-2" id="form-control-search" type="search"
+                                        placeholder="Search" aria-label="Search"><span class="border-icon-search"><i
+                                            class="fa fa-search " id="icon-search"></i></span>
+                                </form>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <span id="cart">0&#273; <i class="fas fa-briefcase"></i></span>
+            </div>
+        </nav>
+    </div>
+    <div id="top">
+        <div class="text-center" id="text-top">
+            <h1>SPORTER.VN: QUẦN ÁO ĐỒ THỂ THAO NAM NỮ CHÍNH HÃNG CAO CẤP</h1>
+        </div>
+        <div class="bg-img " id="img-index1">
+            <div class="text-center text " id="text-box">
+                <h1>ĐỒ THỂ THAO</h1>
+                <h2>Yoga Collection</h2>
+                <p>Bộ sưu tập đồ tập Yoga 2020 chất lượng với nhiều mẫu mã trẻ trung, kiểu dáng thời trang thể thao mới
+                    nhất.</p>
+                <div><button class="btn btn-default">ĐỒ TẬP YOGA</button></div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <div class="bg-img" id="img-index2">
+            <div class="container">
+                <div class="text-center row float-left" id="text-box2">
+                    <h2>THẢM TẬP YOGA</h2>
+                    <p class="text-left">Nơi duy nhất mà bạn có thể mua thảm tập Yoga chất lượng được<span
+                            id="color-text-custom"> bảo hành lên
+                            tới 12 tháng.</span><br />
+                        Thảm làm từ vật liệu an toàn cho người sử dụng – nhiều mẫu mã đẹp.
+                    </p>
+                    <span>
+                        <button type="button" class="btn btn-warning" id="bt-oranges">XEM THẢM</button>
+                    </span>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+        <div class="" id="bg-green">
+            <div class="container">
+                <div class="row " id="text-box3">
+                    <h3>QUẦN LEGGINGS & ÁO BRAS</h3>
+                    <p>Những chiếc áo bras thể thao giúp bảo vệ vòng 1 khi tập luyện
+                        Quần leggings cũng là trang phục không thể thiếu cùng bạn đến phòng tập….</p>
+                    <span>
+                        <a class="custom-text-orange" href="">QUẦN LEGGING</a>
+                        &nbsp;|&nbsp;
+                        <a class="custom-text-orange" href="">ÁO BRA</a>
+                    </span>
+                </div>
+                <div>
+                    <img src="Images/quan-ao-tap-gym-nu-dep.jpg" style="padding: 60px;" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="bg-purple">
+            <div class="container ">
+                <div class="col-md-6">
+                    <img src="Images/do-tap-gym-banner-nho.jpg" style="padding-top: 180px ;" alt="">
+                </div>
+                <div class="float-right col-md-6" id="text-box4">
+                    <h3>QUẦN ÁO TẬP GYM NAM</h3>
+                    <p>Những bộ đồ tập GYM nam sành điệu không những giúp việc luyện tập của bạn hiệu quả và chuyên
+                        nghiệp
+                        hơn mà còn khiến bạn trông thật cá tính!</p>
+                    <span>
+                        <button class="btn btn-light bt-none">QUẦN ÁO</button>
+                        <button class="btn btn-light bt-none">GĂNG TAY</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div id="bg-tennis">
+            <div class=" container ">
+                <div class="row">
+                    <div class="col-md-6" id="text-box5">
+                        <h3>QUẦN ÁO TENNIS CHUYÊN NGHIỆP</h3>
+                        <p>Quần – áo tennis, những mẫu vợt và những đôi giày thật sự chất lượng của những thương hiệu
+                            hàng
+                            đầu
+                            luôn đồng hành cùng bạn tới sân đấu….</p>
+                        <span><button class="btn btn-light" id="bt-banner-light">XEM CHI TIẾT</button></span>
+                    </div>
+                    <div class="col-md-6 ">
+                        <img id="rf" src="Images/tennis-1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="bg-football">
+            <div class="container">
+                <div class="text-center col-md-12" id="text-box6">
+                    <h1>QUẦN ÁO BÓNG ĐÁ</h1>
+                    <p><span class="custom-color-orange">Sporter</span> là nơi bạn có thể đặt áo bóng đá với giá tốt
+                        nhất tại <span class="custom-color-orange">TPHCM</span> mà bạn không thể bỏ qua…</p>
+                    <span id="push-a">
+                        <a href="">CÂU LẠC BỘ</a>
+                        <a href="">ĐỘI TUYỂN</a>
+                        <a href="">HÀNG THÁI LAN</a>
+                    </span>
+                    <div class="clearfix"></div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container text-center" id="star-box">
+            <div class="row">
+                <span class="row" id="star-text ">
+                    <b class="section-title"></b>
+                    <span style="padding-left: 10px;padding-right: 10px;">
+                        <i class="fas fa-star"></i>
+                        NHỮNG BÀI VIẾT MỚI NHẤT
+                    </span>
+                    <b class="section-title"></b>
+                </span>
+                <span id="blog"><a href="https://www.sporter.vn/blog/">Xem blog <i
+                            class="fas fa-angle-right"></i></a></span>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="footer1">
+            <div class="container" style="margin-top: 15px;">
+                <div class="row" id="margin-footer">
+                    <div class="col-md-4">
+                        <span class="weight-title">VỀ SPORTER.VN</span>
+                        <div class="is-divider"></div>
+                        Hệ thống bán lẻ đồ thể thao Sporter là đơn vị chuyên sản xuất và phân phối các sản phẩm thể thao
+                        chuyên
+                        nghiệp. Tại đây bạn có thể dễ dàng mua Quần áo và dụng cụ thể thao chất lượng cao, chính hãng...
+                        <strong>Địa chỉ:</strong> 1471 Ba Tháng Hai, quận 11, TPHCM (gần cầu vượt Cây Gõ)<br />
+                        <strong>Hotline:</strong> <a href=""> <span style="font-size: 140%; color: #000080;">
+                                <strong>0936
+                                    777
+                                    554</strong></span></a>
+                        <div id="size-icon">
+                            <a href="https://www.facebook.com/DoTheThaoSporter.vn">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#">
+                                <i class="far fa-envelope"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-pinterest-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="weight-title">ĐĂNG KÝ NHẬN TIN KHUYẾN MÃI</span>
+                        <div class="is-divider"></div>
+                        Hãy nhập email của bạn để chúng tôi gửi email ngay khi có thông tin về những chương trình khuyến
+                        mãi
+                        mới.<br />
+                        <input id="input-email" type="email" placeholder="Nhập email của bạn"><br />
+                        <button class="btn btn-dark weight-title" style="margin-top: 10px;">Đăng kí</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer2">
+            <div class="container">
+                <div class="float-left">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CONTACT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">MŨ KÍNH BƠI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ÁO TẮM ĐỒ BƠI NỮ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">QUẦN BƠI NAM</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ĐỒ BƠI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">NÓN MŨ</a>
+                        </li>
+                    </ul>
+                    <div class="" id="copyright-footer">
+                        Copyright 2020 © <strong>SPORTER.VN</strong>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div id="payment-icon">
+                    <span><i class="fab fa-cc-visa"></i></span>
+                    <span><i class="fab fa-cc-paypal"></i></span>
+                    <span><i class="fab fa-cc-stripe"></i></span>
+                    <span><i class="fab fa-cc-mastercard"></i></span>
+                    <span><i class="fab fa-cc-amazon-pay"></i></span>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+
+</html>
