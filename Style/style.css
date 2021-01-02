@@ -896,10 +896,10 @@ ul li {
   line-height: 1.6;
   font-size: 17px;
 }
-.intro-page3{
+.intro-page3 {
   color: #666666;
 }
-.bt-banner-page6{
+.bt-banner-page6 {
   position: absolute;
   border: 2px solid gray;
   padding: 10px;
@@ -908,18 +908,18 @@ ul li {
   margin-top: 45px;
   margin-left: 224px;
 }
-.bt-banner-page6:hover{
+.bt-banner-page6:hover {
   background-color: white;
   text-decoration: none;
-  color:gray ;
+  color: gray;
   border: none;
 }
-.t-yoga img{
+.t-yoga img {
   width: 246px;
   height: 246px;
   cursor: pointer;
 }
-.t-yoga{
+.t-yoga {
   padding: 15px;
 }
 .t-yoga:hover {
@@ -927,13 +927,71 @@ ul li {
   min-height: 320px;
   box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
-.sale-t-yoga{
+.sale-t-yoga {
   color: white;
   background-color: #400094;
   padding: 10px;
   font-size: 18px;
-  margin: -206px-231px;
+  margin: -206px -231px;
   margin-top: -287px;
   margin-left: -183px;
   position: absolute;
+}
+.bra-shirt img {
+  width: 365.8px;
+  height: 379.8px;
+  cursor: pointer;
+}
+.sale-bra {
+  margin-top: -376px;
+  margin-left: -232px;
+  color: white;
+  background-color: #400094;
+  padding: 10px;
+  font-size: 18px;
+  position: absolute;
+}
+.bra-shirt:hover {
+  width: 379, 8px;
+  min-height: 379.9px;
+  box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+#text-box-page8 {
+  background-color: rgba(0, 0, 0, 0.86);
+  width: 364px;
+  left: 57%;
+  margin-top: 100px;
+  position: absolute;
+  border-radius: 50%;
+  padding: 46px;
+  color: #f1f1f1;
+}
+#text-box-page8 p {
+  font-size: 17px;
+}
+#text-box-page8 h1 {
+  font-weight: 700;
+}
+#text-page8 {
+  color: #f1f1f1;
+}
+#text-box2-page8 {
+  background-color: rgba(0, 0, 0, 0.86);
+  margin-top: 100px;
+  padding: 17px;
+  color: #f1f1f1;
+  width: 740px;
+  height: 235px;
+}
+#text-box3-page8 {
+  margin-top: 85px;
+  height: 260px;
+  background-color: rgba(221, 13, 2, 0.86);
+  color: #f1f1f1;
+}
+#bg-pp-p8{
+  background-color: #3D2E5C;
+  color: #f1f1f1;
+  height: 178px;
+  margin-top: 131px;
 }
